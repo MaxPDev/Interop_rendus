@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<BonsCommande BonsCommandeID="ID01">
+    <Entreprises>
+        <Entreprise EntrepriseID="ENT_204">
+            <Nom>
+                TrucEntreprise
+            </Nom>
+            <Adresse>
+                25 Bd Truc, TrucCity
+            </Adresse>
+            <Telephone>
+                01234
+            </Telephone>
+            <Fax>
+                01235
+            </Fax>
+        </Entreprise>
+        <Entreprise EntrepriseID="ENT_02">
+            <Nom>
+                MachinEntreprise
+            </Nom>
+
+            <Adresse>
+                8979 Bd Machin, MachinCity
+            </Adresse>
+
+            <Telephone>
+                56789
+            </Telephone>
+        </Entreprise>
+        <Entreprise EntrepriseID="ENT_209">
+            <Nom>
+                BiduleEntreprise
+            </Nom>
+
+            <Adresse>                
+                250 Bd Truc, BiduleCity
+            </Adresse>
+
+            <Telephone>
+                456879
+            </Telephone>
+        </Entreprise>
+        <Entreprise EntrepriseID="ENT_47">
+            <Nom>
+                ChouetteEntreprise
+            </Nom>
+
+            <Adresse>
+                8979 Bd Chouette, ChouetteCity
+            </Adresse>
+
+            <Telephone>
+                +3398996655555
+            </Telephone>
+        </Entreprise>
+    </Entreprises>
+
+    <BonCommande BonCommandeID="BC1" EmetteurID="ENT_47" RecepteurID="ENT_209">
+        <Date>
+            1995-05-21
+        </Date>
+
+        <MontantTotal>
+            6950€
+        </MontantTotal>
+        <Details>
+            <Produit ProduitID="PRO_98653">
+                <Reference>
+                    #4COLORSPEN
+                </Reference>
+                <Intitule>
+                    Stylo 4 Couleurs
+                </Intitule>
+                <Quantite> 
+                    7
+                </Quantite>
+                <PrixUnit>
+                    980€
+                </PrixUnit>
+            </Produit>
+    
+            <Produit ProduitID="PRO_97987">
+                <Reference>
+                    #TABLE
+                </Reference>
+                <Intitule>
+                    Table Ultra Normal 
+                </Intitule>
+                <Quantite> 
+                    3
+                </Quantite>
+                <PrixUnit>
+                    30€
+                </PrixUnit>
+            </Produit>
+        </Details>
+    </BonCommande>
+    <BonCommande BonCommandeID="BC2" EmetteurID="ENT_204" RecepteurID="ENT_02">
+        <Date>
+            1995-05-27
+        </Date>
+
+
+        <MontantTotal>
+            200€
+        </MontantTotal>
+
+        <Details>
+            <Produit ProduitID="PRO_788996">
+                <Reference>
+                    #TROMB_7899
+                </Reference>
+                <Intitule>
+                    Trombone Acier +++
+                </Intitule>
+                <Quantite> 
+                    200
+                </Quantite>
+                <PrixUnit>
+                    1€
+                </PrixUnit>
+            </Produit>
+        </Details>
+    </BonCommande>
+    <BonCommande BonCommandeID="BC3" EmetteurID="ENT_02" RecepteurID="ENT_204">
+        <Date>
+            1995-06-1
+        </Date>
+
+        <MontantTotal>
+            15€
+        </MontantTotal>
+
+        <Details>
+            <Produit ProduitID="PRO_20222">
+                <Reference>
+                    #keyboardMETA87
+                </Reference>
+                <Intitule>
+                    Clavier, avec des touches et tout
+                </Intitule>
+                <Quantite> 
+                    1
+                </Quantite>
+                <PrixUnit>
+                    10€
+                </PrixUnit>
+            </Produit>
+    
+            <Produit ProduitID="PRO_102238">
+                <Reference>
+                    #MousePower2
+                </Reference>
+                <Intitule>
+                    Une souris de bureautique terriblement quelconque.
+                </Intitule>
+                <Quantite> 
+                    1
+                </Quantite>
+                <PrixUnit>
+                    5€
+                </PrixUnit>
+            </Produit>
+        </Details>
+    </BonCommande>
+</BonsCommande>

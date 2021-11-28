@@ -1,0 +1,28 @@
+<!ELEMENT BonsCommande (Entreprises, BonCommande+)>
+<!ATTLIST BonsCommande BonsCommandeID ID #REQUIRED>
+
+<!ELEMENT Entreprises (Entreprise+)>
+<!ELEMENT Entreprise (Nom, Adresse, Telephone, Fax?)>
+<!ATTLIST Entreprise EntrepriseID ID #REQUIRED>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Adresse (#PCDATA)>
+<!ELEMENT Telephone (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+
+<!ELEMENT BonCommande (Date, MontantTotal, Details)>
+<!ATTLIST BonCommande 
+    BonCommandeID ID #REQUIRED
+    EmetteurID IDREF #REQUIRED
+    RecepteurID IDREF #REQUIRED>
+
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT MontantTotal (#PCDATA)>
+    
+<!ELEMENT Details (Produit+)>
+
+<!ELEMENT Produit (Reference, Intitule, Quantite, PrixUnit)>
+<!ATTLIST Produit ProduitID ID #REQUIRED>
+<!ELEMENT Reference (#PCDATA)>
+<!ELEMENT Intitule (#PCDATA)>
+<!ELEMENT Quantite (#PCDATA)>
+<!ELEMENT PrixUnit (#PCDATA)>
